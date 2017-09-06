@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: f6b5f2c3eca0d40e892f12eb88cb4ec8
+timeCreated: 1496437859
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - somethingToRotate: {fileID: 100000, guid: ed986e099b26c449da1fff2dbbd21dd6, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,3 @@
+- Audio spazializzato
+- Oggetti con animazione sullo sfondo
+- Migliorare stabilità
