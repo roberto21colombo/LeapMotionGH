@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class ScoreController: MonoBehaviour {
 
-	private int countWaterLeft = 500;
-	private int countWaterRed = 500;
-	private int countWaterBlue = 500;
+	public int countWaterLeft = 500;
+	int countWaterRed = 500;
+	int countWaterBlue = 500;
 
 	public GameObject barWaterRed;
 	public GameObject barWaterBlue;
@@ -47,21 +47,13 @@ public class ScoreController: MonoBehaviour {
 		drawBar ();
 	}
 
-
-
-
-
-	void lost(){
-
-	}
-
 	void drawBar(){
 
 //		Debug.Log ("R:"+countWaterRed+", B:"+countWaterBlue+", L:"+countWaterLeft);
 
-		barWaterRed.transform.localScale = new Vector3 (1,100,1);
-		barWaterBlue.transform.localScale = new Vector3 (1,100,1);
-		barWaterLeft.transform.localScale = new Vector3 (1,100,1);
+		barWaterRed.transform.localScale = new Vector3 (1,0,1);
+		barWaterBlue.transform.localScale = new Vector3 (1,0,1);
+		barWaterLeft.transform.localScale = new Vector3 (1,0,1);
 
 		for (int i = 0; i < countWaterLeft; i=i+5){
 			barWaterLeft.transform.localScale += new Vector3 (0,1,0);

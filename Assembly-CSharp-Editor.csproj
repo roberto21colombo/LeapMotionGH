@@ -77,6 +77,7 @@
      <None Include="Assets\LeapMotion\readme.txt" />
      <None Include="Assets\ToDo list.txt" />
      <None Include="Assets\LeapMotion\Resources\ImageHandHighlight.shader" />
+     <None Include="Assets\Images\NewFile.txt" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
      <None Include="Assets\LeapMotion\Shaders\RimShading.shader" />
      <None Include="Assets\LeapMotion\Dependencies.txt" />
