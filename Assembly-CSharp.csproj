@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6CCAED81-476A-BB5D-FD8F-05DBBFDEA315}</ProjectGuid>
+    <ProjectGuid>{ED5DA511-6734-A418-7449-27AF52E50BC6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -233,7 +233,6 @@
      <Compile Include="Assets\Script\ParticleSystemController.cs" />
      <Compile Include="Assets\Script\ScoreController.cs" />
      <Compile Include="Assets\Script\ShaderObj.cs" />
-     <Compile Include="Assets\Script\SoundEffect.cs" />
      <Compile Include="Assets\Script\seguiLaMano.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
@@ -297,10 +296,10 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/roberto/Documents/Unity/LeapMotion/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>/Users/roberto/Documents/Unity/LeapMotionGH/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
- <HintPath>/Users/roberto/Documents/Unity/LeapMotion/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
+ <HintPath>/Users/roberto/Documents/Unity/LeapMotionGH/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

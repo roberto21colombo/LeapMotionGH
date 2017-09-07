@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapMotionGH", "Assembly-CSharp.csproj", "{ED5DA511-6734-A418-7449-27AF52E50BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapMotionGH", "Assembly-CSharp-Editor.csproj", "{7D62F555-8FB9-0DD1-BEB7-37AE20907841}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED5DA511-6734-A418-7449-27AF52E50BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5DA511-6734-A418-7449-27AF52E50BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED5DA511-6734-A418-7449-27AF52E50BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5DA511-6734-A418-7449-27AF52E50BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D62F555-8FB9-0DD1-BEB7-37AE20907841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D62F555-8FB9-0DD1-BEB7-37AE20907841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D62F555-8FB9-0DD1-BEB7-37AE20907841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D62F555-8FB9-0DD1-BEB7-37AE20907841}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

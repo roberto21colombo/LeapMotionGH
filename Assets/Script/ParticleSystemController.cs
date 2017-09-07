@@ -32,7 +32,6 @@ public class ParticleSystemController: MonoBehaviour {
 				if (!mps.emission.enabled) {
 					mps.enableEmission = true;
 					clipWater.Play ();
-
 				}
 			} else {
 				if (mps.emission.enabled) {

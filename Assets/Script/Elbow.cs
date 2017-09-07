@@ -11,6 +11,7 @@ public class Elbow : MonoBehaviour {
 	private bool happy;
 
 	public Text elbowText;
+	public AudioSource alert;
 
 	// Use this for initialization
 	void Start () {
@@ -34,6 +35,7 @@ public class Elbow : MonoBehaviour {
 					Debug.Log("Triste!!");
 					mouth.transform.Rotate (new Vector3 (180, 0, 0));
 					happy = false;
+					alert.Play ();
 				}
 			} else {
 				elbowText.enabled = false;

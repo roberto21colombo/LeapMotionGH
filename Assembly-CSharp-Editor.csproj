@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{ABB02674-4312-20D5-EF70-F09B474478F8}</ProjectGuid>
+    <ProjectGuid>{7D62F555-8FB9-0DD1-BEB7-37AE20907841}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -161,15 +161,15 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/roberto/Documents/Unity/LeapMotion/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>/Users/roberto/Documents/Unity/LeapMotionGH/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
- <HintPath>/Users/roberto/Documents/Unity/LeapMotion/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
+ <HintPath>/Users/roberto/Documents/Unity/LeapMotionGH/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{6CCAED81-476A-BB5D-FD8F-05DBBFDEA315}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{ED5DA511-6734-A418-7449-27AF52E50BC6}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
