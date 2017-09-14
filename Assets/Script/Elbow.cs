@@ -11,11 +11,12 @@ public class Elbow : MonoBehaviour {
 	private bool happy;
 
 	public Text elbowText;
+	public GameObject elbowImg;
 	public AudioSource alert;
 
 	// Use this for initialization
 	void Start () {
-		elbowText.enabled = false;
+		elbowImg.SetActive (false);
 		controller = new Controller();
 		happy = true;
 		mouth = GameObject.FindGameObjectWithTag ("Mouth");
@@ -29,8 +30,8 @@ public class Elbow : MonoBehaviour {
 			Vector handPosition = frame.Hands [0].PalmPosition;
 			Vector elbowPosition = frame.Hands [0].Arm.ElbowPosition;
 
-			if (elbowPosition.y > handPosition.y) {
-				elbowText.enabled = true;
+			if (elbowPosition.y  > handPosition.y) {
+				elbowImg.SetActive (true);
 				if (happy) {
 					Debug.Log("Triste!!");
 					mouth.transform.Rotate (new Vector3 (180, 0, 0));
@@ -38,7 +39,7 @@ public class Elbow : MonoBehaviour {
 					alert.Play ();
 				}
 			} else {
-				elbowText.enabled = false;
+				elbowImg.SetActive (false);
 				if (!happy) {
 					Debug.Log("Felice!!");
 					mouth.transform.Rotate (new Vector3 (-180, 0, 0));

@@ -46,6 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AudioFollaScript.cs" />
+     <Compile Include="Assets\AudioGuitarScript.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoSceneManager.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\GVRDemo\GVRDemoManager.cs" />
@@ -227,14 +229,15 @@
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Utils\FrameRateControls.cs" />
      <Compile Include="Assets\Script\AnimatorMouth.cs" />
      <Compile Include="Assets\Script\Elbow.cs" />
+     <Compile Include="Assets\Script\FollowHand.cs" />
      <Compile Include="Assets\Script\GrowingBarScript.cs" />
      <Compile Include="Assets\Script\GyroRotate.cs" />
      <Compile Include="Assets\Script\LMRotateObject.cs" />
      <Compile Include="Assets\Script\LogicGame.cs" />
+     <Compile Include="Assets\Script\ManAnimatorScript.cs" />
      <Compile Include="Assets\Script\ParticleSystemController.cs" />
      <Compile Include="Assets\Script\ScoreController.cs" />
      <Compile Include="Assets\Script\ShaderObj.cs" />
-     <Compile Include="Assets\Script\seguiLaMano.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Plugins\Android\proguard-gvr.txt" />

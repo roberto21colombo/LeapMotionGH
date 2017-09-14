@@ -8,10 +8,11 @@ public class LMRotateObject : MonoBehaviour {
 	Controller controller;
 	float angle;
 
-	public GameObject somethingToRotate;
+	private GameObject somethingToRotate;
 	// Use this for initialization
 	void Start () {
 		controller = new Controller();
+		somethingToRotate = GameObject.FindGameObjectWithTag ("Bottle");
 	}
 
 	// Update is called once per frame

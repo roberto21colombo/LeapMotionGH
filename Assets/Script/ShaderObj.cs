@@ -5,10 +5,10 @@ using UnityEngine;
 public class ShaderObj : MonoBehaviour {
 
 	// Use this for initialization
-	public GameObject objectToFollow;
+	private GameObject objectToFollow;
 
 	void Start () {
-		
+		objectToFollow = GameObject.FindGameObjectWithTag ("Bottle");
 	}
 	
 	// Update is called once per frame

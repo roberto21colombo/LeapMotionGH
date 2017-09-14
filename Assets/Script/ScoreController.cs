@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class ScoreController: MonoBehaviour {
 
-	public int countWaterLeft = 500;
-	int countWaterRed = 500;
-	int countWaterBlue = 500;
+	public int countWaterLeft = 1000;
+	public int countWaterRed = 500;
+	public int countWaterBlue = 500;
 
 	public GameObject barWaterRed;
 	public GameObject barWaterBlue;
@@ -31,18 +31,24 @@ public class ScoreController: MonoBehaviour {
 	}
 
 	void OnParticleCollision(GameObject other){
+		int dropColor = GameObject.Find ("Canvas").GetComponent<LogicGame> ().dropColor;
+
 		if(other.tag.Equals("Plane") && countWaterLeft > 0){
 			countWaterLeft--;
 		}
 		if(other.tag.Equals("VaseRed") && countWaterRed > 0){
-			Debug.Log ("Hai colpito Vase Red");
-			countWaterRed--;
+			if (dropColor == -1) {
+				countWaterRed--;
+			} else {
+				countWaterRed++;
+			}
 		}
 		if(other.tag.Equals("VaseBlue") && countWaterBlue > 0){
-			Debug.Log ("Hai colpito Vase Blue");
-			countWaterBlue--;
-		}
-		if(mps.isEmitting){
+			if (dropColor == 1) {
+				countWaterBlue--;
+			} else {
+				countWaterBlue++;
+			}
 		}
 		drawBar ();
 	}
@@ -55,7 +61,7 @@ public class ScoreController: MonoBehaviour {
 		barWaterBlue.transform.localScale = new Vector3 (1,0,1);
 		barWaterLeft.transform.localScale = new Vector3 (1,0,1);
 
-		for (int i = 0; i < countWaterLeft; i=i+5){
+		for (int i = 0; i < countWaterLeft; i=i+10){
 			barWaterLeft.transform.localScale += new Vector3 (0,1,0);
 		}
 		for (int i = 0; i < countWaterRed; i=i+5){
