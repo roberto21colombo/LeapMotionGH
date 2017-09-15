@@ -46,8 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AudioFollaScript.cs" />
-     <Compile Include="Assets\AudioGuitarScript.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoSceneManager.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\GVRDemo\GVRDemoManager.cs" />
@@ -228,6 +226,8 @@
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Utils\ExponentialSmoothing.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Utils\FrameRateControls.cs" />
      <Compile Include="Assets\Script\AnimatorMouth.cs" />
+     <Compile Include="Assets\Script\AudioFollaScript.cs" />
+     <Compile Include="Assets\Script\AudioGuitarScript.cs" />
      <Compile Include="Assets\Script\Elbow.cs" />
      <Compile Include="Assets\Script\FollowHand.cs" />
      <Compile Include="Assets\Script\GrowingBarScript.cs" />
