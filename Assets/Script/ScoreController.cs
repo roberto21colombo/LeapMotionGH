@@ -30,6 +30,10 @@ public class ScoreController: MonoBehaviour {
 
 		GameObject.Find ("TopBarRed").transform.localScale = new Vector3 (1, maxWaterIn/10,1);
 		GameObject.Find ("TopBarBlue").transform.localScale = new Vector3 (1, maxWaterIn/10,1);
+
+		if(!GameObject.Find("Canvas").GetComponent<LogicGame>().isLeftWater){
+			GameObject.Find ("Persa").SetActive (false);
+		}
 	}
 
 	// Update is called once per frame
@@ -67,10 +71,12 @@ public class ScoreController: MonoBehaviour {
 		barWaterRed.transform.localScale = new Vector3 (1,0,1);
 		barWaterBlue.transform.localScale = new Vector3 (1,0,1);
 		barWaterLeft.transform.localScale = new Vector3 (1,0,1);
-
+		/*
 		for (int i = 0; i < countWaterLeft; i=i+10){
 			barWaterLeft.transform.localScale += new Vector3 (0,1,0);
 		}
+		*/
+		GameObject.Find("Persa").GetComponent<Text>().text = ""+(maxWaterOut-countWaterLeft);
 		for (int i = 0; i < countWaterRed; i=i+10){
 			barWaterRed.transform.localScale += new Vector3 (0,1,0);
 		}
