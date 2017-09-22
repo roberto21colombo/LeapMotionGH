@@ -33,8 +33,8 @@ public class FollowHand : MonoBehaviour {
 			Vector3 unityPos = palmPos.ToUnityScaled(false);
 
 			unityPos.x = unityPos.x * 30;
-			unityPos.y = unityPos.y * 30 + 1;
-			unityPos.z = unityPos.z * 30 - 3;
+			unityPos.y = unityPos.y * 30 - 1;
+			unityPos.z = unityPos.z * 30 - 5;
 			/* Finally set the object position */
 			somethingToMove.transform.position = unityPos;
 

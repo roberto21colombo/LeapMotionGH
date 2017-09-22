@@ -29,12 +29,15 @@ public class LogicGame : MonoBehaviour {
 		int countWaterRed = GameObject.Find ("Particle System").GetComponent<ScoreController> ().countWaterRed;
 		int countWaterBlue = GameObject.Find ("Particle System").GetComponent<ScoreController> ().countWaterBlue;
 
+		int maxWaterIn = GameObject.Find ("Particle System").GetComponent<ScoreController> ().maxWaterIn;
+		int maxWaterOut = GameObject.Find ("Particle System").GetComponent<ScoreController> ().maxWaterOut;
+
 		if(Input.GetKeyDown(KeyCode.Space)){
 			dropBlue.SetActive (false);
 			StartCoroutine("play");
 		}
 
-		if (isLeftWater && countWaterLeft== 0 || countWaterRed == 0 && countWaterBlue == 0 ) {
+		if (isLeftWater && countWaterLeft== maxWaterOut || countWaterRed >= maxWaterIn  && countWaterBlue >= maxWaterIn ) {
 			gameEnded = true;
 			dropBlue.SetActive (false);
 			dropRed.SetActive (false);

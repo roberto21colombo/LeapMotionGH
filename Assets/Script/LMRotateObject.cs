@@ -6,7 +6,8 @@ using Leap;
 
 public class LMRotateObject : MonoBehaviour {
 	Controller controller;
-	float angle;
+	public float sensEasyRot = 1.5f;
+	public float sensHardRot = 3f;
 
 	private GameObject somethingToRotate;
 	// Use this for initialization
@@ -19,20 +20,32 @@ public class LMRotateObject : MonoBehaviour {
 	void Update () {
 		Frame frame = controller.Frame();
 
-		angle = 0;
+		float angle = 0;
 		if (frame.Hands.Count > 0) {
 
 			Hand mainHand = frame.Hands [0];
 			Vector PalmNormal = mainHand.PalmNormal;
 			angle = Vector3.Angle (new Vector3(PalmNormal.x, PalmNormal.y, 0), Vector3.down);
 
-			if (PalmNormal.x < 0) {
-				angle = angle * -1;
-				angle = angle * 3/2;
+			//Sto usando la mano destra?
+			if (mainHand.IsRight) {
+				//Sto ruotando la mano destra a destra?
+				if (PalmNormal.x < 0) {
+					angle = angle * -1;
+					angle = angle * sensEasyRot;
+				} else {
+					angle = angle * sensHardRot;
+				}
+				somethingToRotate.transform.rotation = Quaternion.Euler (0, 0, angle);
 			} else {
-				angle = angle * 3;
+				if (PalmNormal.x < 0) {
+					angle = angle * -1;
+					angle = angle * sensHardRot;
+				} else {
+					angle = angle * sensEasyRot;
+				}
+				somethingToRotate.transform.rotation = Quaternion.Euler (0, 0, angle);
 			}
-			somethingToRotate.transform.rotation = Quaternion.Euler(0, 0, angle);
 		}
 		//Debug.Log (angle);
 	}
